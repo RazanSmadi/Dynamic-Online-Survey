@@ -66,20 +66,15 @@
                     <div class="rounded h-100 p-4" >
                        
                         <div class="table-responsive" style="color: black;">
-                            <table class="table" id="resultTable" runat="server">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Employee Num</th>
-                                        <th scope="col">Employee Email</th>
-                                        <th scope="col">Survey</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                              
-                                    
-                                </tbody>
-                            </table>
+                            
+                                <asp:Table class="table" id="resultTable" runat="server">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell runat="server" scope="col">#</asp:TableCell>
+                                        <asp:TableCell runat="server" scope="col">Employee Num</asp:TableCell>
+                                        <asp:TableCell runat="server" scope="col">Employee Email</asp:TableCell>
+                                        <asp:TableCell runat="server" scope="col">Survey</asp:TableCell>
+                                    </asp:TableRow>
+                           </asp:Table>
                         </div>
                         <asp:HyperLink runat="server" NavigateUrl="Texts/21-mosab@gmail.com-3.12.txt" Target="_new">HyperLink</asp:HyperLink>
                     </div>
