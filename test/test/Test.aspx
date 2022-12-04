@@ -46,7 +46,7 @@
             </div>
     
             <aside class="sidebar">
-                <p>Welcome, Amer</p>
+                <p class="welcome">Welcome Amer !</p>
                 
                 <div class="menu">
                     <a href="#" class="menu-item">Questions</a>
@@ -75,11 +75,45 @@
                                         <asp:TableCell runat="server" scope="col">Survey</asp:TableCell>
                                     </asp:TableRow>
                            </asp:Table>
-                        </div>
-                        <asp:HyperLink runat="server" NavigateUrl="Texts/21-mosab@gmail.com-3.12.txt" Target="_new">HyperLink</asp:HyperLink>
+                        </div>                 
                     </div>
                 </div>
-       
+        <div class="container-fluid pt-4 px-4">
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-sm-3">
+                            <div class=" rounded d-flex align-items-center justify-content-around p-4" style="background-color:#2672AB ;">
+                                <div class="ms-3">
+                                    <p class="statText" style="color: white;font-size:20px">Completed Surveys</p>
+                                    <h6 class="mb-0" style="color: white;  text-align:center;"><span id="completed" style="font-size:20px" runat="server"></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="col-sm-6 col-sm-3">
+                            <div class=" rounded d-flex align-items-center justify-content-around p-4" style="background-color:#2672AB ;">
+                                <div class="ms-3">
+                                    <p class="statText" style="color: white; font-size:20px">Non-Completed Surveys</p>
+                                    <h6 class="mb-0" style="color: white; text-align:center;"><span id="notCompleted" style="font-size:20px" runat="server"></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-sm-6 col-sm-3">
+                            <div class=" rounded d-flex align-items-center justify-content-around p-4" style="background-color:#2672AB ;">
+                                <div class="ms-3">
+                                    <p class="statText" style="color: white;font-size:20px"> Employees</p>
+                                    <h6 class="mb-0" style="color: white; text-align:center;"><span id="employeesNum" style="font-size:20px" runat="server"></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-3">
+                            <div class=" rounded d-flex align-items-center justify-content-around p-4" style="background-color:#2672AB ;">
+                                <div class="ms-3">
+                                    <p class="statText" style="color: white; font-size:20px"> Missing Surveys</p>
+                                    <h6 class="mb-0" style="color: white; text-align:center;"><span id="missing" style="font-size:20px" runat="server"></span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     
