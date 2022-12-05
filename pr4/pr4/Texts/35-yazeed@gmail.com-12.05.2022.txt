@@ -1,0 +1,10 @@
+1.I understand what is C# and what it is used for?:    Very Good
+2.I understand the C# fundamentals (variables, arrays, objects, strings):    Very Good
+3.I understand what is a conditional statement is such as If statement and why we use it:    Very Good
+4.I understand what is a method, and I can create and call a method:    Very Good
+5.I understand what is loop is such as for loop and why we use it:    Very Good
+6.I understand what is oop concept in c#?:    Very Good
+7.What is difference between Abstract Class and Interface in C#?:    Very Good
+8.I understand When and why to use method Overloading?:    Very Good
+9.Can you create object of class with private constructor in C#?:    Poor
+10.I understsnd how to read or write or creat file in asp .net web form?:    Very Good

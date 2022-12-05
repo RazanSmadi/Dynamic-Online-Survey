@@ -1,0 +1,298 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    height:100vh;
+}
+
+.cendiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.home {
+    width: 100%;
+    background-color: #2672AB;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#imgg {
+    width: 240px;
+}
+
+.pic{
+    width:100%;
+}
+
+
+nav {
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0.8rem 1.5rem;
+    }
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#logo2{
+    width:70%;
+}
+
+h4 {
+    color: white;
+}
+
+#texthome{
+    font-size:25px;
+}
+
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#logIn {
+    background-color: white;
+    color: #2672AB;
+    text-decoration: none;
+    padding: 0.30rem 1rem;
+    margin-top: 2.5rem;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+    #logIn:hover {
+        background-color: transparent;
+        border: 2px solid;
+        color: deepskyblue;
+    }
+
+
+
+
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 10%;
+}
+
+.home .container-images img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.footer {
+    padding: 2rem 8%;
+    background-color: #2672AB;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .content-footer p {
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+#footer1 {
+    background-color: #2672AB;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+}
+
+#rights {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+#ressul{
+    width:47%;
+    padding:11px 0;
+}
+
+.tx {
+    font-family: 'Malgun Gothic';
+    font-size: 59px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #08A500;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #2672AB;
+}
+
+.thanks{
+    padding:20px 0 0 0 ;
+}
+
+.button {
+    background-color: #2672AB;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    Width: 120px;
+}
+
+    .button:hover {
+        box-shadow: 4px 4px 4px 0 rgba(0, 0.1, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+        .content img {
+            width: 329px;
+            margin-top: 0px;
+        }
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 27px;
+    }
+
+    #logo2 {
+        width: 50%;
+       
+    }
+    #texthome {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container-texts {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+
+    .button {
+        border-radius: 11px;
+        padding: 10px 0px;
+        font-size: 13px;
+        Width: 90px;
+    }
+
+    #ressul {
+        width: 82%;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    #imgg {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        flex-direction: row;
+    }
+
+    h4 {
+        font-size: .70rem;
+    }
+
+    .content img {
+        width: 250px;
+        margin-top: 12px;
+    }
+
+    nav {
+        padding-right: 0;
+    padding: 11px 18px;
+}
+
+    h1 {
+        font-size: 25px;
+    }
+    #texthome {
+        font-size: 16px;
+    }
+    .content img {
+        width: 287px;
+    }
+
+    .button {
+        border-radius: 11px;
+        padding: 10px 0px;
+        font-size: 13px;
+        Width: 90px;
+    }
+    .thanks {
+        padding: 33px 0 0 0;
+        text-align: center;
+    }
+    #ressul {
+        width: 100%;
+        padding: 53px 0;
+    }
+    .tx {
+        font-size: 50px;
+    }
+
+
+    }

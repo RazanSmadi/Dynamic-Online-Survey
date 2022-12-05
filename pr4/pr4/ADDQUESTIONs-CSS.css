@@ -1,0 +1,285 @@
+﻿.bigdiv {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.function {
+    display: flex;
+    justify-content: space-around;
+}
+.label1 {
+    color: white;
+    background-color: #2672AB;
+    padding: 20px;
+    font-size:25px;
+}
+.result {
+    border: 3px solid #2672AB;
+    border-radius: 20px;
+    width: auto;
+    font-size: 25px;
+    color: #2672AB;
+    height: auto;
+}
+
+.input1 {
+    width: 500px;
+}
+.button {
+    background-color: white;
+    color: #2672AB;
+    border: 2px solid #2672AB;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+}
+    .button:hover {
+        background-color: #2672AB;
+        color: white;
+        border: 2px solid #2672AB;
+    }
+
+html, body {
+    margin: 0%;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.welcome {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.survey {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    margin-right: 100px
+}
+
+li {
+    display: inline-block;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2672AB;
+    justify-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.test1 {
+    font-size: 20px;
+}
+
+#logo {
+    width: 28%;
+    margin-left: 12px
+}
+
+
+.navLinks {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 0.5rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #2672AB;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: relative;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+
+    .hamburger > span,
+    .hamburger > span::before,
+    .hamburger > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 99px;
+        background-color: #FFF;
+        transition-duration: .25s;
+    }
+
+        .hamburger > span::before {
+            content: '';
+            top: -8px;
+        }
+
+        .hamburger > span::after {
+            content: '';
+            top: 8px;
+        }
+
+.menu-toggle.is-active .hamburger > span {
+    transform: rotate(45deg);
+}
+
+    .menu-toggle.is-active .hamburger > span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    .menu-toggle.is-active .hamburger > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+.sidebar {
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #2672AB;
+}
+
+    .sidebar p {
+        color: white;
+        font-size: 35px;
+        margin-bottom: 0.5em;
+    }
+
+    .sidebar .menu {
+        margin: 0 -1rem;
+    }
+
+        .sidebar .menu .menu-item {
+            font-size: 25px;
+            display: block;
+            padding: 0.3em;
+            color: #FFF;
+            margin-top: 50px;
+            text-decoration: none;
+            transition: 0.2s linear;
+        }
+
+            .sidebar .menu .menu-item:hover,
+            .sidebar .menu .menu-item.is-active {
+                color: #FEE2C5;
+                border-right: 5px solid black;
+            }
+
+            .sidebar .menu .menu-item:hover {
+                border-right: 5px solid black;
+            }
+
+.maincontent {
+    flex: 1 1 0;
+    padding: 2rem;
+}
+
+    .maincontent h1 {
+        color: #3C3F58;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+@media screen and (min-device-width: 481px) and (max-device-width : 768px) {
+
+
+
+    ul {
+        gap: 60px;
+        margin-right: 120px;
+    }
+
+    .navLinks {
+        font-size: 25px;
+    }
+
+    .sidebar {
+        max-width: 200px;
+    }
+
+    #logo {
+        width: 63%;
+        margin-bottom: 8px;
+    }
+
+    .test1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-device-width: 0px) and (max-device-width : 480px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .survey {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        right: 0.7rem;
+    }
+
+    .maincontent {
+        padding: 0px;
+        padding-top: 50px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        transition: 0.2s linear;
+    }
+
+
+
+        .sidebar.is-active {
+            left: 0;
+        }
+
+    h1 {
+        font-size: 10px;
+    }
+}

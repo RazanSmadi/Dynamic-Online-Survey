@@ -1,0 +1,11 @@
+﻿1.I understand what is C# and what it is used for?
+2.I understand the C# fundamentals (variables, arrays, objects, strings)
+3.I understand what is a conditional statement is such as If statement and why we use it
+4.I understand what is a method, and I can create and call a method
+5.I understand what is loop is such as for loop and why we use it
+6.I understand what is oop concept in c#?
+7.What is difference between Abstract Class and Interface in C#?
+8.I understand When and why to use method Overloading?
+9.Can you create object of class with private constructor in C#?
+10.I understsnd how to read or write or creat file in asp .net web form?
+.
